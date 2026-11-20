@@ -1,0 +1,368 @@
+@import "tailwindcss";
+
+:root {
+  --surface-ivory: #faf9f5;
+  --surface-card: #ffffff;
+  --surface-muted: #f1efe7;
+  --brand-forest: #0b3d2e;
+  --brand-forest-dark: #07291f;
+  --brand-emerald: #146c43;
+  --brand-gold: #c89314;
+  --brand-gold-bright: #e6b42c;
+  --ink-primary: #16221e;
+  --ink-muted: #4b5d56;
+  --border-subtle: #e2dfd5;
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, Cambria, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+html {
+  background-color: var(--surface-ivory);
+  color: var(--ink-primary);
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--surface-ivory);
+  color: var(--ink-primary);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================================================================
+   Modern Web Guidance: Accessible Modal <dialog> & Scroll Containment
+   (Applies dialog, light-dismiss-a-dialog, prevent-page-scroll-under-modal-dialog)
+   ============================================================================ */
+dialog:modal {
+  overscroll-behavior: contain;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 0;
+  max-inline-size: min(94dvw, 68rem);
+  max-block-size: 92dvh;
+  border-radius: 1rem;
+  background: #0b1c17;
+  color: #faf9f5;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55);
+}
+
+dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background-color: rgba(7, 25, 19, 0.78);
+  backdrop-filter: blur(4px);
+}
+
+/* ============================================================================
+   Modern Web Guidance: Responsive Site Navigation (navbar)
+   ============================================================================ */
+.site-header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 40;
+  background: rgba(250, 249, 245, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.site-header .menu-button {
+  anchor-name: --site-menu-btn;
+}
+
+.site-header .site-menu {
+  position: fixed;
+  inset: auto;
+  /* Fallback offset before anchor() for Firefox / older browsers */
+  inset-block-start: 4.75rem;
+  inset-block-start: anchor(--site-menu-btn bottom);
+  inset-inline-end: 1rem;
+  inline-size: min(88dvw, 22rem);
+  max-inline-size: calc(100dvw - 2rem);
+  block-size: fit-content;
+  max-block-size: calc(100dvh - 6rem);
+  margin-block-start: 0.5rem;
+  padding: 0.75rem;
+  overflow: auto;
+  border-radius: 1rem;
+  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+  box-shadow: 0 20px 50px rgba(11, 61, 46, 0.18);
+}
+
+.site-header .site-menu:not(:is(:popover-open, .\:popover-open)) {
+  display: none;
+}
+
+.site-header .site-menu:is(:popover-open, .\:popover-open) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .site-header .menu-button {
+    display: none;
+  }
+
+  .site-header .site-menu {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+    inline-size: auto;
+    max-inline-size: none;
+    block-size: auto;
+    max-block-size: none;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .site-header .site-menu::backdrop {
+    display: none;
+  }
+}
+
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink-primary);
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(11, 61, 46, 0.07);
+  color: var(--brand-forest);
+}
+
+/* Current page indicator using underline + bold pill (not color alone — WCAG 1.4.1) */
+.nav-link[aria-current="page"] {
+  background-color: rgba(11, 61, 46, 0.1);
+  color: var(--brand-forest);
+  box-shadow: inset 0 -2.5px 0 0 var(--brand-gold);
+}
+
+/* ============================================================================
+   Modern Web Guidance: Responsive Data Tables (@container stacked layout)
+   ============================================================================ */
+.table-wrapper {
+  overflow: auto;
+  max-inline-size: 100%;
+  max-block-size: min(620px, 78vh);
+  container-type: inline-size;
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.875rem;
+  background: #ffffff;
+}
+
+.table-wrapper:focus-visible {
+  outline: 2.5px solid var(--brand-gold);
+  outline-offset: 2px;
+}
+
+.responsive-data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9rem;
+}
+
+.responsive-data-table thead {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 2;
+  background: var(--brand-forest);
+  color: #faf9f5;
+}
+
+.responsive-data-table thead th {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.responsive-data-table tbody tr {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.responsive-data-table tbody th {
+  position: sticky;
+  inset-inline-start: 0;
+  z-index: 1;
+  background: #ffffff;
+  text-align: left;
+  padding: 0.85rem 1rem;
+  font-weight: 700;
+  color: var(--brand-forest);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.responsive-data-table tbody td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.responsive-data-table tbody tr:hover th,
+.responsive-data-table tbody tr:hover td {
+  background: #f6f4ec;
+}
+
+@container (width < 640px) {
+  .responsive-data-table,
+  .responsive-data-table thead,
+  .responsive-data-table tbody,
+  .responsive-data-table tr,
+  .responsive-data-table th,
+  .responsive-data-table td {
+    display: block;
+  }
+
+  .responsive-data-table thead {
+    display: none;
+  }
+
+  .responsive-data-table tbody tr {
+    margin: 0.75rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .responsive-data-table tbody th {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 2;
+    background: #f1efe7;
+    padding: 0.75rem 1rem;
+  }
+
+  .responsive-data-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    white-space: normal;
+    padding: 0.55rem 1rem;
+  }
+
+  .responsive-data-table tbody td::before {
+    font-weight: 600;
+    color: var(--ink-muted);
+    font-size: 0.8rem;
+  }
+
+  .responsive-data-table tbody td:nth-child(2)::before {
+    content: var(--col-2, "Column 2") ": ";
+  }
+  .responsive-data-table tbody td:nth-child(3)::before {
+    content: var(--col-3, "Column 3") ": ";
+  }
+  .responsive-data-table tbody td:nth-child(4)::before {
+    content: var(--col-4, "Column 4") ": ";
+  }
+  .responsive-data-table tbody td:nth-child(5)::before {
+    content: var(--col-5, "Column 5") ": ";
+  }
+  .responsive-data-table tbody td:nth-child(6)::before {
+    content: var(--col-6, "Column 6") ": ";
+  }
+  .responsive-data-table tbody td:nth-child(7)::before {
+    content: var(--col-7, "Column 7") ": ";
+  }
+}
+
+/* ============================================================================
+   Modern Web Guidance: Validate Input After Interaction (:user-invalid)
+   ============================================================================ */
+.field-input {
+  width: 100%;
+  border-radius: 0.625rem;
+  border: 1.5px solid #cfd6d2;
+  background-color: #ffffff;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.95rem;
+  color: var(--ink-primary);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.field-input:focus-visible {
+  outline: none;
+  border-color: var(--brand-forest);
+  box-shadow: 0 0 0 3px rgba(20, 108, 67, 0.18);
+}
+
+.field-input:is(:user-invalid, .user-invalid-fallback) {
+  border-color: #b91c1c;
+  background-color: #fef2f2;
+}
+
+.field-input:is(:user-valid) {
+  border-color: #15803d;
+}
+
+.field-error-msg {
+  display: none;
+  margin-top: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #b91c1c;
+}
+
+.field-input:is(:user-invalid, .user-invalid-fallback) + .field-error-msg {
+  display: block;
+}
+
+.visually-hidden:where(:not(:focus-within, :active)) {
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* Print styling for Digital Membership ID Card & Receipts */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+  }
+}
+

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Rayfield Jos National Secretariat Inauguration">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#072B20"/>
+      <stop offset="55%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#145A41"/>
+    </linearGradient>
+    <linearGradient id="gold1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C89314"/>
+      <stop offset="50%" stop-color="#F2CA52"/>
+      <stop offset="100%" stop-color="#C89314"/>
+    </linearGradient>
+    <pattern id="grid1" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <rect width="1200" height="750" fill="url(#grid1)"/>
+  <!-- Plateau Rock Skyline Silhouette -->
+  <path d="M0 540 L120 470 L240 510 L390 420 L540 480 L710 390 L860 465 L1030 410 L1200 490 L1200 750 L0 750 Z" fill="#062219" opacity="0.85"/>
+  <path d="M0 600 L180 540 L340 575 L520 515 L690 560 L890 510 L1080 555 L1200 530 L1200 750 L0 750 Z" fill="#0A3326" opacity="0.9"/>
+  <!-- Architectural Plaza Columns -->
+  <g opacity="0.16" fill="#FAF9F5">
+    <rect x="760" y="210" width="320" height="290" rx="8"/>
+    <rect x="795" y="255" width="32" height="245"/>
+    <rect x="855" y="255" width="32" height="245"/>
+    <rect x="915" y="255" width="32" height="245"/>
+    <rect x="975" y="255" width="32" height="245"/>
+    <rect x="1035" y="255" width="20" height="245"/>
+  </g>
+  <!-- Gold Accent Bar -->
+  <rect x="84" y="96" width="120" height="6" rx="3" fill="url(#gold1)"/>
+  <text x="84" y="148" fill="#F2CA52" font-family="Georgia, serif" font-size="22" letter-spacing="4" font-weight="700">NATIONAL SECRETARIAT • JOS, PLATEAU STATE</text>
+  <text x="84" y="246" fill="#FAF9F5" font-family="Georgia, serif" font-size="68" font-weight="700">Reimagine. Reset.</text>
+  <text x="84" y="328" fill="#F2CA52" font-family="Georgia, serif" font-size="68" font-weight="700">Rebuild Nigeria.</text>
+  <text x="84" y="396" fill="#D4E5DD" font-family="-apple-system, sans-serif" font-size="26">No. 8 Rabo House Plaza, opp. Jos City Park, Mazaram Rayfield</text>
+  <rect x="84" y="592" width="1032" height="1" fill="#F2CA52" opacity="0.35"/>
+  <text x="84" y="646" fill="#FAF9F5" font-family="-apple-system, sans-serif" font-size="22" font-weight="600">NLE MAKINDE / DAURA APM GRASSROOTS SUPPORT NETWORK</text>
+  <text x="84" y="682" fill="#A9C9BC" font-family="-apple-system, sans-serif" font-size="18">Commissioned by National Chairman Ms Nikurai Maton • www.nlegrassroots.org</text>
+</svg>
+

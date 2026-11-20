@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="NLE Nationwide Grassroots Network">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#082E22"/>
+      <stop offset="100%" stop-color="#155D42"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg4)"/>
+  <!-- Concentric Pulse Rings representing 36 States + FCT -> 774 LGAs -> 176,846 PUs -->
+  <g transform="translate(880, 375)" fill="none">
+    <circle r="270" stroke="#F2CA52" stroke-opacity="0.16" stroke-width="2"/>
+    <circle r="210" stroke="#F2CA52" stroke-opacity="0.28" stroke-width="2"/>
+    <circle r="150" stroke="#FAF9F5" stroke-opacity="0.35" stroke-width="2"/>
+    <circle r="90" fill="#F2CA52" fill-opacity="0.14" stroke="#F2CA52" stroke-width="3"/>
+    <text y="-6" text-anchor="middle" fill="#FAF9F5" font-family="Georgia, serif" font-size="38" font-weight="700">36+1</text>
+    <text y="26" text-anchor="middle" fill="#F2CA52" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" letter-spacing="2">STATES &amp; FCT</text>
+  </g>
+  <text x="84" y="160" fill="#F2CA52" font-family="-apple-system, sans-serif" font-size="20" letter-spacing="4" font-weight="700">NATIONWIDE MOVEMENT FUND</text>
+  <text x="84" y="252" fill="#FAF9F5" font-family="Georgia, serif" font-size="64" font-weight="700">Grassroots Power</text>
+  <text x="84" y="330" fill="#F2CA52" font-family="Georgia, serif" font-size="64" font-weight="700">In Every Ward.</text>
+  <text x="84" y="408" fill="#D4E5DD" font-family="-apple-system, sans-serif" font-size="24">Connecting 774 LGAs, 8,809 Wards &amp; 176,846 Polling Units</text>
+  <text x="84" y="446" fill="#D4E5DD" font-family="-apple-system, sans-serif" font-size="24">under one transparent civic movement.</text>
+  <text x="84" y="660" fill="#A9C9BC" font-family="-apple-system, sans-serif" font-size="20">NLE Makinde/Daura APM Grassroots Support Network</text>
+</svg>
+

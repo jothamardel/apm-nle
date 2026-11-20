@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Community Support and Welfare Outreach">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#144532"/>
+      <stop offset="100%" stop-color="#0A2B1F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg6)"/>
+  <circle cx="960" cy="360" r="230" fill="#F2CA52" fill-opacity="0.1"/>
+  <circle cx="960" cy="360" r="150" fill="#F2CA52" fill-opacity="0.15"/>
+  <rect x="84" y="114" width="300" height="42" rx="21" fill="#FAF9F5" fill-opacity="0.14"/>
+  <text x="234" y="141" text-anchor="middle" fill="#F2CA52" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="2">GRASSROOTS WELFARE DRIVE</text>
+  <text x="84" y="252" fill="#FAF9F5" font-family="Georgia, serif" font-size="62" font-weight="700">Lifting Members &amp;</text>
+  <text x="84" y="330" fill="#F2CA52" font-family="Georgia, serif" font-size="62" font-weight="700">Communities First.</text>
+  <text x="84" y="408" fill="#D4E5DD" font-family="-apple-system, sans-serif" font-size="24">Direct food relief, women trader empowerment, and local</text>
+  <text x="84" y="446" fill="#D4E5DD" font-family="-apple-system, sans-serif" font-size="24">member support funded transparently by grassroots donors.</text>
+  <text x="84" y="660" fill="#A9C9BC" font-family="-apple-system, sans-serif" font-size="20">Jos • Katsina • Oyo • Bauchi • Nationwide Chapters</text>
+</svg>
+

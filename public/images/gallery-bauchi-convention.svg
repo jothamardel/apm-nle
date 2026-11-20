@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="APM National Convention Bauchi Delegation">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B3D2E"/>
+      <stop offset="60%" stop-color="#146C43"/>
+      <stop offset="100%" stop-color="#0A2E22"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="78%" cy="32%" r="48%">
+      <stop offset="0%" stop-color="#F2CA52" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#0B3D2E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <rect width="1200" height="750" fill="url(#glow2)"/>
+  <!-- APM White Green Gold Stripes -->
+  <rect x="0" y="0" width="1200" height="16" fill="#F2CA52"/>
+  <rect x="0" y="16" width="1200" height="8" fill="#FAF9F5"/>
+  <circle cx="930" cy="300" r="195" fill="none" stroke="#F2CA52" stroke-width="2" stroke-dasharray="10 10" opacity="0.45"/>
+  <circle cx="930" cy="300" r="145" fill="#072B20" stroke="#F2CA52" stroke-width="4"/>
+  <text x="930" y="286" text-anchor="middle" fill="#FAF9F5" font-family="Georgia, serif" font-size="52" font-weight="700">APM</text>
+  <text x="930" y="332" text-anchor="middle" fill="#F2CA52" font-family="-apple-system, sans-serif" font-size="18" letter-spacing="3" font-weight="700">NIGERIA FIRST</text>
+  <text x="86" y="164" fill="#F2CA52" font-family="-apple-system, sans-serif" font-size="20" letter-spacing="4" font-weight="700">ALLIED PEOPLES MOVEMENT • NATIONAL CONVENTION</text>
+  <text x="86" y="256" fill="#FAF9F5" font-family="Georgia, serif" font-size="64" font-weight="700">Makinde / Daura</text>
+  <text x="86" y="334" fill="#F2CA52" font-family="Georgia, serif" font-size="56" font-weight="700">The Reset Agenda 2027</text>
+  <text x="86" y="408" fill="#E1EFE8" font-family="-apple-system, sans-serif" font-size="24">Rilwanu Adamu Square, Bauchi State • Grassroots Solidarity Delegation</text>
+  <g transform="translate(86, 480)">
+    <rect width="230" height="58" rx="8" fill="#FAF9F5" fill-opacity="0.12" stroke="#F2CA52" stroke-opacity="0.4"/>
+    <text x="115" y="36" text-anchor="middle" fill="#FAF9F5" font-family="-apple-system, sans-serif" font-size="18" font-weight="600">Integrity</text>
+    <rect x="250" width="230" height="58" rx="8" fill="#FAF9F5" fill-opacity="0.12" stroke="#F2CA52" stroke-opacity="0.4"/>
+    <text x="365" y="36" text-anchor="middle" fill="#FAF9F5" font-family="-apple-system, sans-serif" font-size="18" font-weight="600">Sacrifice</text>
+    <rect x="500" width="230" height="58" rx="8" fill="#FAF9F5" fill-opacity="0.12" stroke="#F2CA52" stroke-opacity="0.4"/>
+    <text x="615" y="36" text-anchor="middle" fill="#FAF9F5" font-family="-apple-system, sans-serif" font-size="18" font-weight="600">Service</text>
+  </g>
+  <text x="86" y="672" fill="#BBD6C9" font-family="-apple-system, sans-serif" font-size="19">NLE Makinde/Daura APM Grassroots Support Network • 36 States + FCT</text>
+</svg>
+
